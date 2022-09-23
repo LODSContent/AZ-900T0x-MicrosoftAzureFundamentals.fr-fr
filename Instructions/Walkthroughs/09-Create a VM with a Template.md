@@ -1,48 +1,48 @@
 ---
 wts:
-    title: '09 - Créer une machine virtuelle avec un modèle (10 minutes)'
-    module: 'Module 03 - Décrire les solutions principales et les outils de gestion'
+  title: "09 - Créer une machine virtuelle avec un modèle (10\_minutes)"
+  module: 'Module 03: Describe core solutions and management tools'
 ---
-# 09 - Créer une machine virtuelle avec un modèle (10 minutes)
+# <a name="09---create-a-vm-with-a-template-10-min"></a>09 - Créer une machine virtuelle avec un modèle (10 minutes)
 
 Dans cette procédure pas à pas, nous allons déployer une machine virtuelle avec un modèle de démarrage rapide et examiner ses capacités de surveillance.
 
-# Tâche 1 : Explorer la galerie QuickStart (Démarrage rapide) et localiser un modèle 
+# <a name="task-1-explore-the-quickstart-gallery-and-locate-a-template"></a>Tâche 1 : Explorer la galerie QuickStart (Démarrage rapide) et localiser un modèle 
 
 Dans cette tâche, nous allons parcourir la galerie de démarrage rapide Azure et déployer un modèle qui crée une machine virtuelle. 
 
-1. Au cœur de l’environnement de labo, ouvrez une nouvelle fenêtre de navigateur et entrez https://azure.microsoft.com/fr-fr/resources/templates/?azure-portal=true. Dans la galerie, vous trouverez un certain nombre de modèles courants et récemment mis à jour. Ces modèles automatisent le déploiement des ressources Azure, y compris l’installation de packages logiciels courants. Parcourez les différents types de modèles disponibles.
+1. Within the lab environment, open a new browser window, and enter T <ph id="ph1">https://azure.microsoft.com/en-us/resources/templates/?azure-portal=true</ph>. In the gallery you will find a number of popular and recently updated templates. These templates automate deployment of Azure resources, including installation of popular software packages. Browse through the many different types of templates that are available.
 
-2. Sélectionnez l’option **Déployer une simple machine virtuelle Windows**
+3. Sélectionnez l’option **Déployer une simple machine virtuelle Windows**
 
-3. Cliquez sur le bouton **Déployer sur Azure**. Votre session de navigateur sera automatiquement redirigée vers le [portail Azure](http://portal.azure.com/).
+4. Click the <bpt id="p1">**</bpt>Deploy to Azure<ept id="p1">**</ept> button. Your browser session will be automatically redirected to the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](http://portal.azure.com/)</ept>.
 
-  **Remarque** : Le bouton **Déployer sur Azure** vous permet de déployer le modèle via le portail Azure. Lors d’un tel déploiement, vous serez invité uniquement à définir un ensemble limité de paramètres de configuration. 
+  <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The <bpt id="p2">**</bpt>Deploy to Azure<ept id="p2">**</ept> button enables you to deploy the template via the Azure portal. During such deployment, you will be prompted only for small set of configuration parameters. 
 
-4. Lorsque vous y êtes invité, connectez-vous à votre abonnement Azure à l’aide des identifiants fournis précédemment dans les instructions.
+5. Lorsque vous y êtes invité, connectez-vous à votre abonnement Azure à l’aide des informations d’identification fournies précédemment dans les instructions.
 
-5. Cliquez sur **Modifier le modèle**. Le format de modèle Resource Manager utilise le format JSON. Vérifiez les paramètres et les variables.  Localisez ensuite le paramètre du nom de la machine virtuelle. Remplacez le nom par **myVMTemplate**. **Enregistrez** vos modifications. 
+6. Click <bpt id="p1">**</bpt>Edit template<ept id="p1">**</ept>. The Resource Manager template format uses the JSON format. Review the parameters and variables.  Then locate the parameter for virtual machine name. Change the name to <bpt id="p1">**</bpt>myVMTemplate<ept id="p1">**</ept>. <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> your changes. 
 
     ![Capture d’écran du modèle avec le changement de nom de la machine virtuelle en surbrillance.](../images/0901.png)
 
-6. Configurez ensuite les paramètres requis par le modèle (remplacez ***xxxx*** dans le préfixe d’étiquette DNS par des lettres et des chiffres, de sorte que l’étiquette soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments. 
+7. Now configure the parameters required by the template (replace <bpt id="p1">***</bpt>xxxx<ept id="p1">***</ept> in the DNS label prefix with letters and digits such that the label is globally unique). Leave the defaults for everything else. 
 
     | Paramètre| Valeur|
     |----|----|
     | Abonnement | **Utilisez la valeur par défaut fournie**|
-    | Groupe de ressources | **Créer un groupe de ressources** |
-    | Région | Utilisez la valeur par défaut fournie |
+    | Resource group | **Créer un groupe de ressources** |
+    | Région | conservez l’URL par défaut . |
     | Nom d’utilisateur administrateur | **azureuser** |
-    | Mot de passe administrateur | **Pa$$w0rd1234** |
+    | Mot de passe de l'administrateur | **Pa$$w0rd1234** |
     | Préfixe d’étiquette DNS | **myvmtemplatexxxx** |
     | Version du SE | **2019-Datacenter** |
 
 
-7. Cliquez sur **Examiner et créer**.
+9. Cliquez sur **Vérifier + créer**.
 
-8. Surveillez votre déploiement. 
+10. Surveillez votre déploiement. 
 
-# Tâche 2 : Vérifiez et contrôlez le déploiement de votre machine virtuelle
+# <a name="task-2-verify-and-monitor-your-virtual-machine-deployment"></a>Tâche 2 : Vérifier et contrôler le déploiement de votre machine virtuelle
 
 Dans cette tâche, nous allons vérifier si la machine virtuelle s’est correctement déployée. 
 
@@ -50,25 +50,25 @@ Dans cette tâche, nous allons vérifier si la machine virtuelle s’est correct
 
 2. Assurez-vous que votre nouvelle machine virtuelle a été créée. 
 
-    ![Capture d’écran de la page des machines virtuelles. La nouvelle machine virtuelle est affichée et fonctionne.](../images/0902.png)
+    ![Screenshot of the virtual machines page. The new VM is shown and running.](../images/0902.png)
 
 3. Sélectionnez votre machine virtuelle puis, dans le panneau **Présentation**, accédez à l’onglet **Surveillance** et faites défiler vers le bas pour afficher les données de surveillance.
 
     **Remarque** : Le délai de surveillance peut être ajusté, de une heure à 30 jours.
 
-4. Passez en revue les différents graphiques fournis, y compris **UC (moyenne)**, **Réseau (total)**, et **Octets de disque (total)**. 
+4. Passez en revue les différents graphiques fournis, y compris **UC (moyenne)** , **Réseau (total)** , et **Octets de disque (total)** . 
 
     ![Capture d’écran des graphiques de surveillance des machines virtuelles.](../images/0903.png)
 
-5. Cliquez sur un graphique. Remarquez que vous pouvez **Ajouter une mesure** et modifier le type de graphique.
+5. Dans l’environnement lab, ouvrez une nouvelle fenêtre de navigateur et entrez T https://azure.microsoft.com/en-us/resources/templates/?azure-portal=true.
 
-6. Revenez au panneau **Vue d’ensemble**. (Pour cela, faites glisser la barre de défilement sur le côté gauche)
-7. Cliquez sur le **journal d’activité** (volet gauche). Les journaux d’activité enregistrent des événements tels que la création ou la modification de ressources. 
+6. Dans la galerie, vous trouverez un certain nombre de modèles courants et récemment mis à jour.
+7. Ces modèles automatisent le déploiement des ressources Azure, y compris l’installation de packages logiciels courants. 
 
 8. Cliquez sur **Ajouter un filtre** et recherchez différents types d’événements et d’opérations afin de vous familiariser avec cette option. 
 
     ![Capture d’écran de la page Ajouter des filtres avec le type d’événement sélectionné.](../images/0904.png)
 
-Félicitations ! Vous venez de créer une ressource à partir d’un modèle et vous avez déployé ce modèle dans Azure.
+Parcourez les différents types de modèles disponibles.
 
-**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.
+<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.

@@ -1,17 +1,17 @@
 ---
 wts:
-    title: '10 - Créer une machine virtuelle avec PowerShell (10 min)'
-    module: 'Module 03 - Décrire les solutions principales et les outils de gestion'
+  title: "10 - Créer une machine virtuelle avec PowerShell (10\_min)"
+  module: 'Module 03: Describe core solutions and management tools'
 ---
-# 10 - Créer une machine virtuelle avec PowerShell (10 min)
+# <a name="10---create-a-vm-with-powershell-10-min"></a>10 - Créer une machine virtuelle avec PowerShell (10 min)
 
 Dans cette procédure pas à pas, nous allons configurer Cloud Shell, utiliser le module Azure PowerShell pour créer un groupe de ressources et une machine virtuelle et, enfin, passer en revue les suggestions d’Azure Advisor. 
 
-# Tâche 1 : Configurer Cloud Shell 
+# <a name="task-1-configure-the-cloud-shell"></a>Tâche 1 : Configurer Cloud Shell 
 
 Dans cette tâche, nous allons configurer Cloud Shell. 
 
-1. Connectez-vous au [portail Azure](https://portal.azure.com). **Vous trouverez vos identifiants de connexion sous l'onglet Ressources (situé juste à côté de l’onglet Instructions).**
+1. Connectez-vous au [portail Azure](https://portal.azure.com). **Vous trouverez vos identifiants de connexion sous l’onglet Ressources (situé juste à côté de l’onglet Instructions).**
 2. Dans le portail Azure, ouvrez **Azure Cloud Shell** en cliquant sur l’icône située en haut à droite du portail Azure.
 
     ![Capture d’écran de l’icône Azure Cloud Shell dans le portail Azure.](../images/1002.png)
@@ -28,13 +28,13 @@ Dans cette tâche, nous allons configurer Cloud Shell.
 
 5. Sélectionnez **Créer un stockage**
 
-# Tâche 2 : Créer un groupe de ressources et une machine virtuelle
+# <a name="task-2-create-a-resource-group-and-virtual-machine"></a>Tâche 2 : Créer un groupe de ressources et une machine virtuelle
 
 Dans cette tâche, nous allons utiliser PowerShell pour créer un groupe de ressources et une machine virtuelle.  
 
 1. Vérifiez que **PowerShell** est sélectionné dans le menu déroulant en haut à gauche du volet Cloud Shell.
 
-2. Vérifiez votre nouveau groupe de ressources en exécutant en exécutant la commande suivante dans la fenêtre Powershell. Appuyez sur **Entrée** pour exécuter la commande.
+2. Verify your new resource group by running the following command in the Powershell window. Press <bpt id="p1">**</bpt>Enter<ept id="p1">**</ept> to run the command.
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
@@ -57,13 +57,13 @@ Dans cette tâche, nous allons utiliser PowerShell pour créer un groupe de ress
 
 5. Une fois la machine virtuelle créée, fermez le panneau Cloud Shell de la session PowerShell.
 
-6. Dans le portail Azure, recherchez les **machines virtuelles** et vérifiez que **myVMPS** est en cours d’exécution. Cette opération peut prendre quelques minutes.
+6. In the Azure portal, search for <bpt id="p1">**</bpt>Virtual machines<ept id="p1">**</ept> and verify the <bpt id="p2">**</bpt>myVMPS<ept id="p2">**</ept> is running. This may take a few minutes.
 
     ![Capture d’écran de la page des machines virtuelles avec myVMPS en cours d’exécution.](../images/1001.png)
 
 7. Accédez à la nouvelle machine virtuelle et passez en revue les paramètres Vue d’ensemble et Réseaux pour vérifier que vos informations ont été correctement déployées. 
 
-# Tâche 3 : Exécuter des commandes dans Cloud Shell
+# <a name="task-3-execute-commands-in-the-cloud-shell"></a>Tâche 3 : Exécuter des commandes dans Cloud Shell
 
 Dans cette tâche, nous nous entraînerons à exécuter des commandes PowerShell à partir de Cloud Shell. 
 
@@ -71,7 +71,7 @@ Dans cette tâche, nous nous entraînerons à exécuter des commandes PowerShell
 
 2. Vérifiez que **PowerShell** est sélectionné dans le menu déroulant en haut à gauche du volet Cloud Shell.
 
-3. Accédez aux informations concernant votre machine virtuelle, notamment le nom, le groupe de ressources, l’emplacement et l’état. Notez que PowerState indique **Exécution en cours**.
+3. Retrieve information about your virtual machine including name, resource group, location, and status. Notice the PowerState is <bpt id="p1">**</bpt>running<ept id="p1">**</ept>.
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
@@ -82,15 +82,15 @@ Dans cette tâche, nous nous entraînerons à exécuter des commandes PowerShell
     ```PowerShell
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
-5. À l’invite, confirmez (Oui) l’action. Attendez l’affichage du statut **Opération réussie**.
+5. When prompted confirm (Yes) to the action. Wait for <bpt id="p1">**</bpt>Succeeded<ept id="p1">**</ept> status.
 
-6. Vérifiez l’état de votre machine virtuelle. PowerState doit maintenant indiquer **Désalloué**. Vous pouvez également vérifier l’état de la machine virtuelle dans le portail. Fermez Cloudshell.
+6. Verify your virtual machine state. The PowerState should now be <bpt id="p1">**</bpt>deallocated<ept id="p1">**</ept>. You can also verify the virtual machine status in the portal. Close Cloudshell.
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
     ```
 
-# Tâche 4 : Consulter les suggestions dans Azure Advisor
+# <a name="task-4-review-azure-advisor-recommendations"></a>Tâche 4 : Consulter les suggestions dans Azure Advisor
 
 **Remarque :** Cette même tâche est proposée dans le labo Créer une machine virtuelle avec Azure CLI. 
 
@@ -98,15 +98,15 @@ Dans cette tâche, nous allons passer en revue les suggestions proposées dans A
 
 1. Dans le panneau **Tous les services**, recherchez et sélectionnez **Advisor**. 
 
-2. Dans le panneau **Advisor**, sélectionnez **Vue d’ensemble**. Les suggestions sont regroupées par fiabilité, sécurité, niveau de performance et coût. 
+2. On the <bpt id="p1">**</bpt>Advisor<ept id="p1">**</ept> blade, select <bpt id="p2">**</bpt>Overview<ept id="p2">**</ept>. Notice recommendations are grouped by Reliability, Security, Performance, and Cost. 
 
-    ![Capture d’écran de la page Vue d’ensemble d’Advisor](../images/1003.png)
+    ![Capture d’écran de la page Vue d’ensemble d’Advisor ](../images/1003.png)
 
 3. Sélectionnez **Toutes les suggestions** et prenez le temps de consulter toutes les suggestions et actions suggérées. 
 
-    **Remarque :** Selon vos ressources, vos suggestions peuvent différer. 
+    **Remarque :** Selon vos ressources, vos suggestions peuvent être différentes. 
 
-    ![Capture d’écran de la page Toutes les suggestions Advisor.](../images/1004.png)
+    ![Capture d’écran de la page Toutes les suggestions Advisor. ](../images/1004.png)
 
 4. Notez que vous pouvez télécharger les suggestions au format CSV ou PDF. 
 
@@ -114,6 +114,6 @@ Dans cette tâche, nous allons passer en revue les suggestions proposées dans A
 
 6. Si vous avez le temps, continuez à expérimenter Azure PowerShell. 
 
-Félicitations ! Vous avez configuré Cloud Shell, créé une machine virtuelle à l’aide de PowerShell, utilisé des commandes PowerShell et consulté les suggestions Advisor.
+Congratulations! You have configured Cloud Shell, created a virtual machine using PowerShell, practiced with PowerShell commands, and viewed Advisor recommendations.
 
-**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.
+<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.

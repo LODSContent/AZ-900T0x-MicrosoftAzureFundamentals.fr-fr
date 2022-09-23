@@ -1,13 +1,13 @@
 ---
 wts:
-    title: '11 - Créer une machine virtuelle avec la CLI (10 min)'
-    module: 'Module 03 - Décrire les solutions principales et les outils de gestion'
+  title: "11 - Créer une machine virtuelle avec la CLI (10\_min)"
+  module: 'Module 03: Describe core solutions and management tools'
 ---
-# 11 - Créer une machine virtuelle avec la CLI (10 min)
+# <a name="11---create-a-vm-with-the-cli-10-min"></a>11 - Créer une machine virtuelle avec la CLI (10 min)
 
 Dans cette procédure pas à pas, nous allons configurer Cloud Shell, utiliser Azure CLI pour créer un groupe de ressources et une machine virtuelle et passer en revue les recommandations Azure Advisor. 
 
-# Tâche 1 : Configurer Cloud Shell 
+# <a name="task-1-configure-the-cloud-shell"></a>Tâche 1 : Configurer Cloud Shell 
 
 Dans cette tâche, nous configurer Cloud Shell., puis nous utiliserons Azure CLI pour créer un groupe de ressources et une machine virtuelle.  
 
@@ -17,9 +17,9 @@ Dans cette tâche, nous configurer Cloud Shell., puis nous utiliserons Azure CLI
 
     ![Capture d’écran de l’icône Azure Cloud Shell dans le portail Azure.](../images/1002.png)
    
-3. Dans la boîte de dialogue Bienvenue dans Azure Cloud Shell , lorsque vous serez invité à sélectionner **Bash** ou **PowerShell**, sélectionnez **Bash**. 
+3. Dans la boîte de dialogue Bienvenue dans Azure Cloud Shelll, lorsque vous serez invité à sélectionner **Bash** ou **PowerShell**, sélectionnez **Bash**. 
 
-4. Une nouvelle fenêtre affiche le message **Vous n’avez aucun stockage monté**. Sélectionnez **Paramètres avancés**.
+4. A new window will open stating <bpt id="p1">**</bpt>You have no storage mounted<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>advanced settings<ept id="p1">**</ept>.
 
 5. Dans la boîte de dialogue Paramètres avancés, renseignez les champs suivants, puis cliquez sur Créer un stockage :
     - Groupe de ressources : **Créer un groupe de ressources**
@@ -27,7 +27,7 @@ Dans cette tâche, nous configurer Cloud Shell., puis nous utiliserons Azure CLI
     - Partage de fichiers : Créez un nouveau partage et nommez-le cloudshellfileshare
 
 
-# Tâche 2 : Utilisez CLI pour créer une machine virtuelle
+# <a name="task-2-use-cli-to-create-a-virtual-machine"></a>Tâche 2 : Utilisez CLI pour créer une machine virtuelle
 
 Dans cette tâche, nous utiliserons Azure CLI pour créer un groupe de ressources et une machine virtuelle.
 
@@ -42,7 +42,7 @@ Dans cette tâche, nous utiliserons Azure CLI pour créer un groupe de ressource
     az group list --output table
     ```
 
-4. Dans Cloud Shell, entrez la commande ci-dessous et vérifiez que chaque ligne, à l’exception de la dernière, est effectivement suivie du caractère barre oblique inversée (`\`). Si vous tapez la commande entière sur la même ligne, n’utilisez pas la barre oblique inverse. 
+4. In Cloud Shell enter the command below and make sure that each line, except for the last one, is followed by the backslash (<ph id="ph1">`\`</ph>) character. If you type the whole command on the same line, do not use any backslash characters. 
 
     ```cli
     az vm create \
@@ -56,7 +56,7 @@ Dans cette tâche, nous utiliserons Azure CLI pour créer un groupe de ressource
 
     >**Remarque** : Si vous utilisez la ligne de commande sur un ordinateur Windows, remplacez le caractère barre oblique inverse (`\`) par le caractère caret, représentant un accent circonflexe (`^`).
 
-    **Remarque** : L’exécution de cette commande peut prendre 2 à 3 minutes. La commande créera une machine virtuelle et diverses ressources associées, telles que des ressources de stockage, de mise en réseau et de sécurité. Ne passez pas à l’étape suivante tant que le déploiement de la machine virtuelle n’est pas terminé. 
+    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The command will take 2 to 3 minutes to complete. The command will create a virtual machine and various resources associated with it such as storage, networking and security resources. Do not continue to the next step until the virtual machine deployment is complete. 
 
 5. Une fois la commande exécutée, dans la fenêtre du navigateur, fermez le volet Cloud Shell.
 
@@ -65,7 +65,7 @@ Dans cette tâche, nous utiliserons Azure CLI pour créer un groupe de ressource
     ![Capture d’écran de la page des machines virtuelles avec myVMPS en cours d’exécution.](../images/1101.png)
 
 
-# Tâche 3 : Exécuter des commandes dans Cloud Shell
+# <a name="task-3-execute-commands-in-the-cloud-shell"></a>Tâche 3 : Exécuter des commandes dans Cloud Shell
 
 Dans cette tâche, nous nous entraînerons à exécuter des commandes CLI à partir de Cloud Shell. 
 
@@ -73,25 +73,25 @@ Dans cette tâche, nous nous entraînerons à exécuter des commandes CLI à par
 
 2. Assurez-vous que **Bash** est sélectionné dans le menu déroulant affiché en haut à gauche du volet Cloud Shell.
 
-3. Récupérez des informations sur la machine virtuelle que vous avez approvisionnée, notamment son nom, son groupe de ressources, son emplacement et son état. Notez que PowerState indique **Exécution en cours**.
+3. Retrieve information about the virtual machine you provisioned, including name, resource group, location, and status. Notice the PowerState is <bpt id="p1">**</bpt>running<ept id="p1">**</ept>.
 
     ```cli
     az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
     ```
 
-4. Arrêtez la machine virtuelle. Un message vous indique que la facturation se poursuit jusqu’à ce que la machine virtuelle soit désallouée. 
+4. Stop the virtual machine. Notice the message that billing continues until the virtual machine is deallocated. 
 
     ```cli
     az vm stop --resource-group myRGCLI --name myVMCLI
     ```
 
-5. Vérifiez l’état de votre machine virtuelle. L’état d’alimentation devrait maintenant être **arrêté**.
+5. Verify your virtual machine status. The PowerState should now be <bpt id="p1">**</bpt>stopped<ept id="p1">**</ept>.
 
     ```cli
     az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
     ```
 
-# Tâche 4 : Consultation des suggestions d’Azure Advisor
+# <a name="task-4-review-azure-advisor-recommendations"></a>Tâche 4 : Consulter les suggestions dans Azure Advisor
 
 Dans cette tâche, nous passerons en revue les recommandations présentées dans Azure Advisor.
 
@@ -99,22 +99,22 @@ Dans cette tâche, nous passerons en revue les recommandations présentées dans
 
 1. Dans le panneau **Tous les services**, recherchez et sélectionnez **Advisor**. 
 
-2. Dans le panneau **Advisor**, sélectionnez **Vue d’ensemble**. Les suggestions sont regroupées par fiabilité, sécurité, niveau de performance et coût. 
+2. On the <bpt id="p1">**</bpt>Advisor<ept id="p1">**</ept> blade, select <bpt id="p2">**</bpt>Overview<ept id="p2">**</ept>. Notice recommendations are grouped by Reliability, Security, Performance, and Cost. 
 
-    ![Capture d’écran de la page Vue d’ensemble d’Advisor](../images/1103.png)
+    ![Capture d’écran de la page Vue d’ensemble d’Advisor ](../images/1103.png)
 
 3. Sélectionnez **Toutes les suggestions** et prenez le temps de consulter toutes les suggestions et actions suggérées. 
 
     **Remarque :** Selon vos ressources, vos suggestions peuvent être différentes. 
 
-    ![Capture d’écran de la page Toutes les suggestions Advisor.](../images/1104.png)
+    ![Capture d’écran de la page Toutes les suggestions Advisor. ](../images/1104.png)
 
 4. Notez que vous pouvez télécharger les suggestions au format CSV ou PDF. 
 
-5. Notez que vous pouvez créer des alertes. 
+5. Notez également que vous pouvez créer des alertes. 
 
 6. Si vous avez le temps, continuez à expérimenter Azure CLI. 
 
-Félicitations ! Vous avez configuré Cloud Shell, créé une machine virtuelle à l’aide d’Azure CLI, pratiqué l’utilisation des commandes Azure CLI et consulté les recommandations Advisor.
+Congratulations! You have configured Cloud Shell, created a virtual machine using Azure CLI, practiced with Azure CLI commands, and viewed Advisor recommendations.
 
-**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.
+<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
