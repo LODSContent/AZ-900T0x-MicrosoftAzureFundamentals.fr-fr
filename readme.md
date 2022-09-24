@@ -1,21 +1,13 @@
----
-ms.openlocfilehash: 5a4f22916729f310cf3772d9b9e129f5999e9bb9
-ms.sourcegitcommit: 26c283fffdd08057fdce65fa29de218fff21c7d0
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137907917"
----
 # <a name="az-900t00-and-az-900t01-microsoft-azure-fundamentals"></a>AZ-900T00 et AZ-900T01 : Microsoft Azure - Notions fondamentales
 
 - **[Lien vers les procédures pas à pas (format HTML)](https://microsoftlearning.github.io/AZ-900T0x-MicrosoftAzureFundamentals/)**
-- **Êtes-vous un MCT ?** - Consultez notre [Guide de l’utilisateur GitHub pour MCT](https://microsoftlearning.github.io/MCT-User-Guide/)
+- <bpt id="p1">**</bpt>Are you a MCT?<ept id="p1">**</ept> - Have a look at our <bpt id="p1">[</bpt>GitHub User Guide for MCTs<ept id="p1">](https://microsoftlearning.github.io/MCT-User-Guide/)</ept>
 
 ## <a name="what-are-we-doing"></a>Que faisons-nous ?
 
-- Pour assurer le support de ces cours, nous devrons effectuer des mises à jour fréquentes du contenu de la formation pour maintenir à jour les services Azure qui y sont utilisés.  Nous publions les instructions de labo sur GitHub pour permettre des contributions ouvertes entre les auteurs du cours et les MCT pour maintenir le contenu à jour avec les modifications de la plateforme Azure.
+- To support these courses, we will need to make frequent updates to the course content to keep it current with the Azure services used in the course.  We are publishing the lab instructions on GitHub to allow for open contributions between the course authors and MCTs to keep the content current with changes in the Azure platform.
 
-- Nous espérons que cela vous apportera un sentiment de collaboration aux labos sans précédent. Si Azure change et que vous le découvrez le premier lors d’une livraison en direct, apportez une amélioration directement dans la source du labo.  Aidez vos collègues MCT.
+- We hope that this brings a sense of collaboration to the labs like we've never had before - when Azure changes and you find it first during a live delivery, go ahead and make an enhancement right in the lab source.  Help your fellow MCTs.
 
 ## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>Comment dois-je utiliser ces fichiers par rapport aux fichiers MOC publiés ?
 
@@ -33,10 +25,10 @@ ms.locfileid: "137907917"
 
 - L’instructeur MCT peut soumettre une demande de tirage (pull request) au code ou au contenu dans le référentiel GitHub. Microsoft et l’auteur du cours trieront et incluront alors le contenu et les modifications du code de labo en fonction des besoins.
 
-- Vous pouvez soumettre des bogues, des changements, des améliorations et des idées.  Vous avez découvert une nouvelle fonctionnalité Azure avant nous ?  Envoyez une nouvelle démonstration !
+- **Êtes-vous un MCT ?**
 
-## <a name="notes"></a>Remarques
+## <a name="notes"></a>Notes
 
-### <a name="classroom-materials"></a>Documents de classe
+### <a name="classroom-materials"></a>Documents de cours
 
-Il est fortement recommandé que les MCT et les partenaires accèdent à ces documents et, à leur tour, les fournissent séparément aux participants.  Diriger les participants directement vers GitHub pour accéder aux étapes du labo pendant un cours leur ferait accéder à une autre interface utilisateur dans le cadre du cours, ce qui pourrait les dérouter. Une explication au participant concernant la raison pour laquelle il reçoit des instructions de labo distinctes peut mettre en évidence la nature d’une interface et d’une plateforme cloud en constante évolution. La prise en charge de Microsoft Learning pour l’accès aux fichiers sur GitHub et la prise en charge de la navigation sur le site GitHub sont limitées aux instructeurs MCT qui enseignent ce cours.
+- Consultez notre [Guide de l’utilisateur GitHub pour MCT](https://microsoftlearning.github.io/MCT-User-Guide/)

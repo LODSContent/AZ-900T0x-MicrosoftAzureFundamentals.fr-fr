@@ -95,9 +95,9 @@ Dans cette tâche, nous autoriserons le trafic RDP vers la machine virtuelle en 
 
     | Paramètre | Valeur |
     | -- | -- |
-    | Source | **Any**|
+    | Source | **Aucune**|
     | Source port ranges | **\*** |
-    | Destination | **Any** |
+    | Destination | **Aucune** |
     | Plages de ports de destination | **3389** |
     | Protocol | **TCP** |
     | Action | **Autoriser** |
@@ -128,7 +128,7 @@ Dans cette tâche, nous allons créer une règle de port de sortie NSG qui refus
 
     | Paramètre | Valeur |
     | -- | -- |
-    | Source | **Any**|
+    | Source | **Aucune**|
     | Source port ranges | **\*** |
     | Destination | **Étiquette du service** |
     | Identification de destination | **Internet** |
