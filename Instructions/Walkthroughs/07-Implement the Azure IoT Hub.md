@@ -5,7 +5,7 @@ wts:
 ---
 # <a name="07---implement-an-azure-iot-hub-10-min"></a>« 07 - Implémenter Azure IoT Hub (10 minutes) »
 
-In this walkthrough, we will configure a new Azure IoT Hub in Azure Portal, and then authenticate a connection to an IoT device using the online Raspberry Pi device simulator. Sensor data and messages are passed from the Raspberry Pi simulator to your Azure IoT Hub, and you view metrics for the messaging activity in Azure Portal.
+Dans cette procédure pas à pas, nous allons configurer un nouveau hub IoT Azure dans le portail Azure, puis authentifier une connexion à un appareil IoT à l’aide du simulateur d’appareil Raspberry Pi en ligne. Les données et les messages des capteurs sont transmis du simulateur Raspberry Pi à votre hub IoT Azure. Vous pouvez afficher des mesures pour l’activité de messagerie dans le portail Azure.
 
 # <a name="task-1-create-an-iot-hub"></a>Tâche 1 : Créer un hub IoT 
 
@@ -38,19 +38,19 @@ Dans cette tâche, nous allons créer un hub IoT.
 
 Dans cette tâche, nous allons ajouter un appareil IoT au hub IoT. 
 
-1. When the deployment has completed, click <bpt id="p1">**</bpt>Go to resource<ept id="p1">**</ept> from the deployment blade. Alternatively, from the <bpt id="p1">**</bpt>All services<ept id="p1">**</ept> blade, search for and select <bpt id="p2">**</bpt>IoT Hub<ept id="p2">**</ept> and locate your new IoT Hub instance
+1. Une fois le déploiement terminé, cliquez sur **Accéder à la ressource** dans le panneau de déploiement. Une autre solution consiste, à partir du panneau **Tous les services**, à rechercher et sélectionner **hub IoT** et à localiser votre nouvelle instance hub IoT
 
     ![Capture d’écran des notifications de déploiement en cours et de déploiement réussi dans le portail Azure.](../images/0601.png)
 
-2. To add a new IoT device, scroll down to the <bpt id="p1">**</bpt>Device management<ept id="p1">**</ept> section and click <bpt id="p2">**</bpt>Devices<ept id="p2">**</ept>. Then, click <bpt id="p1">**</bpt>+ Add Device<ept id="p1">**</ept>.
+2. Pour ajouter un nouvel appareil IoT, faites défiler la liste jusqu’à la section **Gestion des appareils**, puis cliquez sur **Appareils**. Ensuite, cliquez sur **+ Ajouter un appareil**.
 
-    ![Dans cette procédure pas à pas, nous allons configurer un nouveau hub IoT Azure dans le portail Azure, puis authentifier une connexion à un appareil IoT à l’aide du simulateur d’appareil Raspberry Pi en ligne.](../images/0602.png)
+    ![Capture d’écran du volet des appareils IoT, mis en surbrillance dans le panneau de navigation du hub IoT, dans le portail Azure. Le bouton Nouveau est mis en surbrillance pour illustrer comment ajouter une nouvelle identité d’appareil IoT au hub IoT.](../images/0602.png)
 
-3. Les données et les messages des capteurs sont transmis du simulateur Raspberry Pi à votre hub IoT Azure. Vous pouvez afficher des mesures pour l’activité de messagerie dans le portail Azure.
+3. Donnez un nom à votre nouvel appareil IoT, **myRaspberryPi**, puis cliquez sur le bouton **Enregistrer**. Cette opération crée une identité d’appareil IoT dans votre hub IoT Azure.
 
 4. Si vous ne voyez pas votre nouvel appareil, **actualisez** la page Appareils IoT. 
 
-5. Select <bpt id="p1">**</bpt>myRaspberryPi<ept id="p1">**</ept> and copy the <bpt id="p2">**</bpt>Primary Connection String<ept id="p2">**</ept> value. You will use this key in the next task to authenticate a connection to the Raspberry Pi simulator.
+5. Sélectionnez **myRaspberryPi** et copiez la valeur **Chaîne de connexion principale**. Vous utiliserez cette clé dans la tâche suivante pour authentifier une connexion auprès du simulateur Raspberry Pi.
 
     ![Capture d’écran de la page Chaîne de connexion principale avec icône de copie en surbrillance.](../images/0603.png)
 
@@ -58,25 +58,25 @@ Dans cette tâche, nous allons ajouter un appareil IoT au hub IoT.
 
 Dans cette tâche, nous allons tester notre appareil à l’aide du simulateur Raspberry Pi. 
 
-1. Open a new tab in the web browser and type this shortcut link <ph id="ph1">https://aka.ms/RaspPi</ph>. It will take you to a Raspberry Pi Simulator site. If you have time, read about the Raspberry Pi simulator. When done select "<bpt id="p1">**</bpt>X<ept id="p1">**</ept>" to close the pop-up window.
+1. Ouvrez un nouvel onglet dans votre navigateur web et tapez https://aka.ms/RaspPi. Ceci vous dirigera vers un site de simulateur Raspberry Pi. Si vous avez le temps, documentez-vous concernant le simulateur Raspberry Pi. Ensuite, sélectionnez **X** pour fermer la fenêtre contextuelle.
 
-2. In the code area on the right side, locate the line with 'const connectionString ='. Replace it with the connection string you copied from the Azure portal. Note that the connection sting includes the DeviceId (<bpt id="p1">**</bpt>myRaspberryPi<ept id="p1">**</ept>) and SharedAccessKey entries.
+2. Dans la zone de code située sur la partie droite, localisez la ligne contenant « const connectionString = » Remplacez ce code par la chaîne de connexion que vous avez copiée à partir du portail Azure. Notez que la chaîne de connexion comprend les entrées DeviceId (**myRaspberryPi**) et SharedAccessKey.
 
     ![Capture d’écran de la zone de codage dans le simulateur Raspberry Pi.](../images/0604.png)
 
-3. Click <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> (below the code area) to run the application. The console output should show the sensor data and messages that are sent from the Raspberry Pi simulator to your Azure IoT Hub. Data and messages are sent each time the Raspberry Pi simulator LED flashes. 
+3. Cliquez sur **Exécuter** (sous la zone de code) pour exécuter l’application. La sortie de la console doit afficher les données du capteur et les messages qui sont envoyés du simulateur Raspberry Pi à votre hub IoT Azure. Les données et les messages sont envoyés à chaque fois que la LED du simulateur Raspberry Pi clignote. 
 
-    ![Screenshot of the Raspberry Pi simulator console.  The console output shows sensor data and messages sent from the Raspberry Pi simulator to Azure IoT Hub.](../images/0605.png)
+    ![Capture d’écran de la console du simulateur Raspberry Pi.  La sortie de la console affiche les données du capteur et les messages envoyés du simulateur Raspberry Pi au hub IoT Azure.](../images/0605.png)
 
 5. Cliquez sur **Arrêter** pour interrompre l’envoi de données.
 
 6. Revenez au Portail Azure.
 
-7. Switch the IoT Hub <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> blade and scroll down to the <bpt id="p2">**</bpt>IoT Hub Usage<ept id="p2">**</ept> information to view usage. Change your timeframe in the <bpt id="p1">**</bpt>show data for last<ept id="p1">**</ept> to see data in the last hour.
+7. Dans le panneau **Présentation** d’IoT Hub, défilez vers le bas jusque**Utilisation d’IoT Hub** pour afficher son utilisation. Modifiez la plage de temps dans la zone **afficher les dernières données** (show data for last) pour visualiser les données de la dernière heure.
 
     ![Capture d’écran des mesures dans la zone d’utilisation du hub IoT du portail Azure.](../images/0606.png)
 
 
-Congratulations! You have set up Azure IoT Hub to collect sensor data from an IoT device.
+Félicitations ! Vous avez configuré le hub IoT Azure pour collecter les données des capteurs à partir d’un appareil IoT.
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.

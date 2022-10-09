@@ -15,7 +15,7 @@ Dans cette tâche, vous allez créer un nouveau compte de stockage.
 
 2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage :** , puis cliquez sur **+ Ajouter, + Créer, + Nouveau**. 
 
-3. On the <bpt id="p1">**</bpt>Basics<ept id="p1">**</ept> tab of the <bpt id="p2">**</bpt>Create storage account<ept id="p2">**</ept> blade, fill in the following information (replace <bpt id="p3">**</bpt>xxxx<ept id="p3">**</ept> in the name of the storage account with letters and digits such that the name is globally unique). Leave the defaults for everything else.
+3. Sous l’onglet **Informations de base** du panneau **Créer un compte de stockage**, remplissez les informations suivantes (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres de sorte que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments.
 
     | Paramètre | Valeur | 
     | --- | --- |
@@ -30,7 +30,7 @@ Dans cette tâche, vous allez créer un nouveau compte de stockage.
 
 5. Cliquez sur **Examiner et créer** pour réviser les paramètres de votre compte de stockage et autoriser Azure à valider la configuration. 
 
-6. Once validated, click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>. Wait for the notification that the account was successfully created. 
+6. Une fois validé, cliquez sur **Créer**. Attendez de recevoir la notification indiquant que le compte a bien été créé. 
 
 7. Sur la page d’accueil, recherchez et sélectionnez **Comptes de stockage** et vérifiez que votre nouveau compte de stockage est répertorié.
 
@@ -42,7 +42,7 @@ Dans cette tâche, nous allons créer un conteneur blob et charger un fichier d�
 
 1. Cliquez sur le nom du nouveau compte de stockage, faites défiler jusqu’à la section **Stockage de données** dans le menu de gauche, puis cliquez sur **Conteneurs**.
 
-2. Click <bpt id="p1">**</bpt>+ Container<ept id="p1">**</ept> and complete the information. Use the Information icons to learn more. When done click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>.
+2. Cliquez sur **Conteneur** et complétez les informations. Utilisez les icônes Information pour en savoir plus. Une fois que vous avez terminé, cliquez sur **Créer**.
 
 
     | Paramètre | Valeur |
@@ -53,16 +53,16 @@ Dans cette tâche, nous allons créer un conteneur blob et charger un fichier d�
 
     ![Capture d’écran du conteneur d’objets blob nouvellement créé dans le compte de stockage du portail Azure.](../images/0402.png)
 
-4. Open a new browser window and search <bpt id="p1">**</bpt>Bing<ept id="p1">**</ept> for an image of a flower. Right click on the image and save it to your VM. 
+4. Ouvrez une nouvelle fenêtre de navigateur et ouvrez **Bing** pour recherchez une image de fleur. Cliquez avec le bouton droit sur l’image et enregistrez-la dans votre machine virtuelle. 
 
 6. Revenez dans le portail, cliquez sur **conteneur1**, puis sélectionnez **Télécharger**.
 
-5. Browse for the image file you just saved on your local computer. Select it and then select upload.
+5. Cliquez sur Parcourir pour retrouver le fichier image que vous venez d’enregistrer sur votre ordinateur local. Sélectionnez-le puis cliquez sur Télécharger.
 
    
 6. Cliquez sur la flèche **Avancée**, laissez les valeurs par défaut mais passez en revue les options disponibles, puis cliquez sur **Charger**.
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You can upload as many blobs as you like in this way. New blobs will be listed within the container.
+    **Remarque** : Vous pouvez charger autant de blobs que vous le souhaitez de cette façon. De nouveaux blobs seront répertoriés dans le conteneur.
 
 7. Une fois le fichier chargé, cliquez avec le bouton droit sur le fichier et notez les options comprenant Afficher/modifier, Télécharger, Propriétés et Supprimer. 
 
@@ -72,12 +72,12 @@ Dans cette tâche, nous allons créer un conteneur blob et charger un fichier d�
 
 1. Revenez dans le panneau Compte de stockage et cliquez sur **Diagnostiquer et résoudre les problèmes**. 
 
-2. Explore some of the most common storage problems. Notice there are multiple troubleshooters here.
+2. Découvrez certains des problèmes de stockage les plus courants. Vous remarquerez la présence de plusieurs utilitaires de résolution de problèmes.
 
-3. On the storage account blade, scroll down to the <bpt id="p1">**</bpt>Monitoring<ept id="p1">**</ept> section and click <bpt id="p2">**</bpt>Insights<ept id="p2">**</ept>. Notice there is information on Failures, Performance, Availability, and Capacity. Your information will be different.
+3. Dans le panneau du compte de stockage, défilez vers le bas jusqu’à la section **Surveillance**, puis cliquez sur **Insights**. Notez qu’il existe des informations sur les pannes, les performances, la disponibilité et la capacité. Vos informations seront différentes.
 
     ![Capture d’écran de la page Informations du compte de stockage.](../images/0403.PNG)
 
-Sous l’onglet **Informations de base** du panneau **Créer un compte de stockage**, remplissez les informations suivantes (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres de sorte que le nom soit unique au monde).
+Félicitations ! Vous avez créé un compte de stockage, puis travaillé avec des objets blob de stockage.
 
-Laissez les valeurs par défaut pour tous les autres éléments.
+**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.

@@ -19,16 +19,16 @@ Au cours de cette tâche, nous allons configurer la stratégie **Exiger une bali
 
 4. Notez que la **Portée** de notre stratégie sera valable au niveau de l’abonnement. 
 
-5. Under <bpt id="p1">**</bpt>Basics<ept id="p1">**</ept> Select the <bpt id="p2">**</bpt>Policy definition<ept id="p2">**</ept> ellipsis button (right side of textbox). In the <bpt id="p1">**</bpt>Search<ept id="p1">**</ept> box, enter the value <bpt id="p2">**</bpt>tag<ept id="p2">**</ept>. A list of related Policies with the word <bpt id="p1">**</bpt>tag<ept id="p1">**</ept> will appear. Scroll down till you find the <bpt id="p1">**</bpt>Require a tag and its value on resources<ept id="p1">**</ept> definition, click on it and click <bpt id="p2">**</bpt>Select<ept id="p2">**</ept>.
+5. Sous **Informations de base**, sélectionnez les points de suspension affichés en regard de la zone **Définition de la stratégie** (côté droit de la zone de texte). Dans la zone de **Recherche**, entrez la valeur **balise**. Une liste des stratégies associées au mot **balise** s’affiche. Faites défiler jusqu’à trouver la définition **Exiger une étiquette et sa valeur sur les ressources**, cliquez sur celle-ci, puis sur **Sélectionner**.
 
    ![image](https://user-images.githubusercontent.com/89808319/155607579-d564a43e-a9cd-443d-8482-f47879eff2e9.png)
    
-6.  On the <bpt id="p1">**</bpt>Parameters<ept id="p1">**</ept> tab, type in **Company : Contoso ** for the tag key/value pair name. Click <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept>, and then <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+6.  Sous l’onglet **Paramètres**, tapez **Company : Contoso ** pour le nom de la paire clé-valeur de l’étiquette. Cliquez sur **Examiner et créer**, puis sur **Créer**.
 
   
 
-7. The <bpt id="p1">**</bpt>Require a tag amd its value on resources<ept id="p1">**</ept> policy assignment is now in place. When a resource is created, it must include a tag with the Company : Contoso key.
-   <bpt id="p1">**</bpt>Note - you need to wait up to 30 minutes for the Policy to be applied.<ept id="p1">**</ept> 
+7. L’affectation de la stratégie **Exiger une étiquette et sa valeur sur les ressources** est à présent en place. Quand une ressource est créée, elle doit inclure une étiquette avec la clé Company : Contoso.
+   **Remarque : Vous pouvez être amené à attendre jusqu’à 30 minutes pour que cette stratégie soit appliquée.** 
 
   ![image](https://user-images.githubusercontent.com/89808319/155607357-556646b6-9ca7-4817-a02e-643869b2c4dd.png)
 
@@ -38,45 +38,45 @@ Au cours de cette tâche, nous allons créer des comptes de stockage pour tester
 
 1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Comptes de stockage**, puis cliquez sur **+Ajouter +Nouveau +Créer**.
 
-2. On the <bpt id="p1">**</bpt>Basics<ept id="p1">**</ept> tab of the <bpt id="p2">**</bpt>Create storage account<ept id="p2">**</ept> blade, fill in the following information (replace <bpt id="p3">**</bpt>xxxx<ept id="p3">**</ept> in the name of the storage account with letters and digits such that the name is globally unique). Leave the defaults for everything else.
+2. Sous l’onglet **Informations de base** du panneau **Créer un compte de stockage**, remplissez les informations suivantes (remplacez **xxxx** dans le nom du compte de stockage par des lettres et des chiffres de sorte que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments.
 
     | Paramètre | Valeur | 
     | --- | --- |
     | Abonnement | **Utiliser la valeur par défaut fournie** |
-    | Resource group | **Créer un groupe de ressources** |
+    | Groupe de ressources | **Créer un groupe de ressources** |
     | Nom du compte de stockage | **compte_stockagexxxx** |
     | Emplacement | **(États-Unis) USA Est** |
 
 3. Cliquez sur **Vérifier + créer**. 
 
-    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We are testing to see what happens when the tag is not supplied. Please note, it can take up to 30 minutes for Policies to take effect.
+    **Remarque :** Nous effectuons un test pour voir ce qui se passe lorsque la balise n’est pas fournie. Notez que la prise d’effet des stratégies peut parfois prendre jusqu’à 30 minutes.
 
-4. You will receive a Validation failed message. Click the <bpt id="p1">**</bpt>Click here to view details<ept id="p1">**</ept> message. On the <bpt id="p1">**</bpt>Errors<ept id="p1">**</ept> blade, on the <bpt id="p2">**</bpt>Summary<ept id="p2">**</ept> tab note the error message stating that resource was disallowed by Policy.
+4. Vous recevrez un message d’échec de validation. Cliquez sur le message **Cliquez ici pour afficher les détails**. Dans le panneau **Erreurs**, sous l’onglet **Sommaire**, notez le message d’erreur indiquant que la ressource a été refusée par la stratégie.
 
     **Remarque :** Si vous affichez l’onglet Erreur brute, vous verrez le nom de balise spécifique requis. 
 
     ![Capture d’écran de refus en raison d’une erreur de stratégie.](../images/1704.png)
 
 
-5. Close the <bpt id="p1">**</bpt>Error<ept id="p1">**</ept> pane and click <bpt id="p2">**</bpt>Previous<ept id="p2">**</ept> (bottom of the screen). Provide the tagging information. 
+5. Fermez le volet **Erreur** et cliquez sur **Précédent** (au bas de l’écran). Fournissez les informations de balisage. 
 
     | Paramètre | Valeur | 
     | --- | --- |
     | Nom de la balise | **Company:Contoso** (peut ne pas se trouver dans la liste déroulante) |
 
-6. Click <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept> and verify that the validation was successful. Click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept> to deploy the storage account. 
+6. Cliquez sur **Examiner et créer** et vérifiez que la validation a réussi. Cliquez sur **Créer** pour déployer le compte de stockage. 
 
 # <a name="task-3-view-all-resources-with-a-specific-tag"></a>Tâche 3 : Afficher toutes les ressources avec une balise spécifique
 
 1. Dans le portail Azure, dans le panneau **Tous les services**, recherchez et sélectionnez **Balises**.
 
-2. Note all tags and their values. Click the <bpt id="p1">**</bpt>Company : Contoso<ept id="p1">**</ept> key/value pair. This will display a blade showing the newly created storage account, as long as you included the tag during its deployment. 
+2. Notez toutes les balises et leurs valeurs. Cliquez sur la paire clé-valeur **Company : Contoso**. Un panneau présentant le compte de stockage nouvellement créé s’affiche, à condition que vous ayez inclus la balise lors de son déploiement. 
 
    ![Capture d’écran des balises avec les options Entreprise et Contoso sélectionnées.](../images/1705.png)
 
 3. Dans le portail, affichez le panneau **Toutes les ressources**.
 
-4. Click <bpt id="p1">**</bpt>Add filter<ept id="p1">**</ept> and add the <bpt id="p2">**</bpt>Company<ept id="p2">**</ept> tag key as the filter category. With the filter applied, only your storage account will be listed.
+4. Cliquez sur **Ajouter un filtre** et ajoutez la clé de balise **Entreprise** comme catégorie de filtre. Une fois le filtre appliqué, seul votre compte de stockage est répertorié.
 
     ![Capture d’écran du filtre Toutes les ressources avec l’option Entreprise activée.](../images/1706.png)
 
@@ -94,7 +94,7 @@ Au cours de cette tâche, nous allons supprimer la stratégie **Exiger une balis
 
 5. Si vous avez le temps, créez une autre ressource sans balise pour vous assurer que la stratégie n’est plus en vigueur.
 
-Sous **Informations de base**, sélectionnez les points de suspension affichés en regard de la zone **Définition de la stratégie** (côté droit de la zone de texte).
+Félicitations ! Au cours de cette procédure pas à pas, nous avons créé une affectation de stratégie qui exige un balisage, créé un compte de Ressources(stockage ), testé la stratégie de balisage, affiché les ressources avec une balise spécifique et, enfin, supprimé la stratégie de balisage.
 
 
-Dans la zone de **Recherche**, entrez la valeur **balise**.
+**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.

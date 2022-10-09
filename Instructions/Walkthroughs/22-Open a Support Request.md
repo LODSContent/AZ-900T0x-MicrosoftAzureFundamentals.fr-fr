@@ -13,9 +13,9 @@ Dans cette procédure pas à pas, nous allons afficher les options de plan de su
 
 2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Aide et support**, puis sélectionnez **Plans de support**.
 
-3. Take a few minutes to review the different support plans. Notice what is included in the <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> plan. 
+3. Prenez quelques minutes pour passer en revue les différents plans de support. Observez ce qui est inclus dans le plan **de base**. 
 
-4. Click <bpt id="p1">**</bpt>+ New support request<ept id="p1">**</ept>. The ticket is created based on the values you specify. 
+4. Cliquez sur **Nouvelle demande de support**. Le ticket est créé en fonction des valeurs que vous spécifiez. 
 
     | Paramètre | Valeur|
     |----|--------|
@@ -29,9 +29,9 @@ Dans cette procédure pas à pas, nous allons afficher les options de plan de su
 
 5. Cliquez sur **Suivant : Solutions >>** et lisez les solutions recommandées.
 
-6. Click <bpt id="p1">**</bpt>Next: Details &gt;&gt;<ept id="p1">**</ept>. When submitting an actual support request, you would provide as much information as possible to allow for a speedy resolution of the issue. Your contact choices on this page depend on your support plan. 
+6. Cliquez sur **Suivant : Détails >>** . Lorsque vous soumettrez une véritable demande de support, fournissez autant d’informations que possible pour permettre une résolution rapide du problème. Vos choix de contacts sur cette page dépendent de votre plan de support. 
 
-    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We will stop at this point. Do you understand how to submit a technical request?
+    **Remarque :** Nous allons terminer ici. Comprenez-vous comment soumettre une demande technique ?
 
 # <a name="task-2-create-a-billing-support-request"></a>Tâche 2 : Créer une demande de support pour la facturation
 
@@ -47,12 +47,12 @@ Dans cette procédure pas à pas, nous allons afficher les options de plan de su
 
 2. Cliquez sur **Suivant : Solutions** et lisez les solutions recommandées.
 
-3. Click <bpt id="p1">**</bpt>Next: Details<ept id="p1">**</ept>.  When submitting a real support request you would provide as much information as possible to allow for a speedy resolution of the issue. 
+3. Cliquez sur **Suivant : Détails**.  Lorsque vous soumettrez une véritable demande de support, fournissez autant d’informations que possible pour permettre une résolution rapide du problème. 
 
-    <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> We will STOP at this point. Do you understand how to submit a support request?
+    **Remarque :** Nous allons terminer ici. Comprenez-vous comment soumettre une demande de support ?
 
-4. Click <bpt id="p1">**</bpt>All support requests<ept id="p1">**</ept>. This is where your support requests are shown. An email is also sent to your email address containing details of the support request.
+4. Cliquez sur **Toutes les demandes de support**. C’est là que vos demandes de support sont affichées. Un e-mail est également envoyé à votre adresse e-mail, avec les détails de la demande de support.
 
-Prenez quelques minutes pour passer en revue les différents plans de support.
+Félicitations ! Vous avez affiché les options de plan de support disponibles et vous vous êtes entraîné à créer et à contrôler une nouvelle demande de support.
 
 **Remarque** : Cliquez pour plus d’informations sur la [**création d’un ticket de support Azure**](https://azure.microsoft.com/en-us/support/create-ticket).

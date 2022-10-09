@@ -27,7 +27,7 @@ Remarque : Avant de commencer le labo, désactivez le pare-feu public et privé
     | Région | **(États-Unis) USA Est** |
     
    
-4. Click the <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept> button. Ensure the validation passes. Then hit create to deploy the resource.
+4. Cliquez sur le bouton **Vérifier + créer**. Assurez-vous que la validation a abouti. Appuyez ensuite sur le bouton Créer pour déployer la ressource.
 
 
 # <a name="task-2-create-two-virtual-machines"></a>Tâche 2 : Créer deux machines virtuelles
@@ -51,13 +51,13 @@ Dans cette tâche, nous allons créer deux machines virtuelles dans le réseau v
    | Ports d’entrée sélectionnés| **RDP (3389)** |
    
 
-3. Select the <bpt id="p1">**</bpt>Networking<ept id="p1">**</ept> tab. Make sure the virtual machine is placed in the <bpt id="p2">**</bpt>vnet1<ept id="p2">**</ept> virtual network. Review the default settings, but do not make any other changes. 
+3. Sélectionnez l’onglet **Réseau**. Vérifiez que la machine virtuelle soit bien placée dans le réseau virtuel **vnet1**. Vérifiez les paramètres par défaut, mais n’apportez aucune autre modification. 
 
-4. Click <bpt id="p1">**</bpt>Review + create<ept id="p1">**</ept>. After the Validation passes, click <bpt id="p1">**</bpt>Create<ept id="p1">**</ept>. Deployment times can vary but it can generally take between three to six minutes to deploy.
+4. Cliquez sur **Vérifier + créer**. Une fois la validation réussie, cliquez sur **Créer**. La durée du déploiement peut varier, mais elle est généralement de trois à six minutes.
 
 5. Surveillez votre déploiement, mais passez à l’étape suivante. 
 
-6. Create a second virtual machine by repeating steps <bpt id="p1">**</bpt>2 to 4<ept id="p1">**</ept> above. Make sure you use a different virtual machine name, that the virtual machine is in the same virtual network, and is using a new public IP address:
+6. Créez une seconde machine virtuelle en répétant les étapes **2 à 4** ci-dessus. Assurez-vous d’utiliser un autre nom de machine virtuelle, vérifiez si la machine virtuelle est située dans le même réseau virtuel et qu'elle utilise effectivement une nouvelle adresse IP publique :
 
     | Paramètre | Valeur |
     | --- | --- |
@@ -70,9 +70,9 @@ Dans cette tâche, nous allons créer deux machines virtuelles dans le réseau v
 
 # <a name="task-3-test-the-connection"></a>Tâche 3 : Tester la connexion 
 
-In this task, we will try to test whether the virtual machines can communicate (ping) each other. If not we will install a rule to allow an ICMP connection. Usually ICMP connections are automatically blocked.
+Dans cette tâche, nous allons tâcher de définir si les machines virtuelles peuvent communiquer (ping) les unes avec les autres. Si ce n’est pas le cas,nous créerons une règle pour permettre une connexion ICMP. En règle générale, les connexions ICMP sont automatiquement bloquées.
 
-1. From the <bpt id="p1">**</bpt>All resources<ept id="p1">**</ept> blade, search for <bpt id="p2">**</bpt>vm1<ept id="p2">**</ept>, open its <bpt id="p3">**</bpt>Overview<ept id="p3">**</ept> blade, and make sure its <bpt id="p4">**</bpt>Status<ept id="p4">**</ept> is <bpt id="p5">**</bpt>Running<ept id="p5">**</ept>. You may need to <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> the page.
+1. Dans le panneau **Toutes les ressources**, recherchez **vm1**, ouvrez le panneau **Vue d’ensemble** correspondant, puis assurez-vous que son **État** est **En cours d’exécution**. Il peut être nécessaire de cliquer sur **Actualiser** pour actualiser la page.
 
 2. Dans le panneau **Présentation**, cliquez sur **Connecter** puis sélectionnez **RDP** dans la liste déroulante.
 
@@ -84,7 +84,7 @@ In this task, we will try to test whether the virtual machines can communicate (
 
 5. Dans la fenêtre **Sécurité de Windows**, tapez le nom d’utilisateur **azureuser** et le mot de passe **Pa$$w0rd1234**, puis cliquez sur **OK**.
 
-6. You may receive a certificate warning during the sign-in process. Click <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to create the connection and connect to your deployed VM. You should connect successfully. Close the Windows Server and Dashboard windows that pop up. You should see a Blue Windows background. You are now in your virtual machine.
+6. Un avertissement de certificat peut s’afficher pendant le processus de connexion. Cliquez sur **Oui** pour créer la connexion et vous connecter à votre machine virtuelle déployée. La connexion doit ensuite aboutir. Fermez les fenêtres contextuelles de Windows Server et du tableau de bord. Vous devriez ensuite apercevoir un arrière-plan Windows de couleur bleue. Vous êtes à présent au niveau de votre machine virtuelle.
 
 7. Dans **les deux** machines virtuelles nouvellement créées, connectez-vous via RDP et désactivez le pare-feu public et privé en ouvrant le menu Démarrer > Paramètres > Réseau et Internet > Localiser le pare-feu Windows.
 
@@ -96,9 +96,9 @@ In this task, we will try to test whether the virtual machines can communicate (
    ping vm2
    ```
 
- 10. You should be successful. You have pinged VM2 from VM1.
+ 10. Vous devriez obtenir un résultat satisfaisant. Vous avec communiqué (ping) avec VM2 depuis VM1.
 
 
-<bpt id="p1">**</bpt>Congratulations!<ept id="p1">**</ept> You have configured and deployed two virtual machines in a virtual network, and then you were able to connect them.
+**Félicitations !** Vous avec configuré et déployé deux machines virtuelles dans un réseau virtuel et vous les avez connectées entre elles.
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.

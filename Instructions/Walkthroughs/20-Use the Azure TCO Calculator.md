@@ -8,7 +8,7 @@ wts:
 
 Dans cette procédure pas à pas, vous allez utiliser l’outil de calcul du coût total de possession (TCO) pour générer un rapport de comparaison des coûts pour un environnement local.
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: This walkthrough provides example definitions of on-premises infrastructure and workloads for a typical datacenter. To create a TCO Calculator report, use the example definitions or provide details of your <bpt id="p1">*</bpt>actual<ept id="p1">*</ept> on-premises infrastructure and workloads.
+**Remarque** : Cette procédure pas à pas fournit des exemples de définitions de l’infrastructure locale et des charges de travail dans un centre de données typique. Pour créer un rapport de calcul de coût TCO, utilisez les exemples de définitions ou fournissez des détails sur les éléments *réels* de votre infrastructure locale et de vos charges de travail.
 
 # <a name="task-1-configure-the-tco-calculator"></a>Tâche 1 : Configurer la calculatrice du coût total de possession (TCO)
 
@@ -88,6 +88,6 @@ Dans cette tâche, nous évaluerons les suggestions de réduction des coûts et 
 
 3. Pour enregistrer ou imprimer une copie PDF du rapport, cliquez sur **Télécharger**.
 
-    ![Screenshot of the report pane of the tco calculator in Azure. The highlighted and completed input fields indicates how set the tco calculator timeframe to three years and the region to north europe. A graph shows the cost of on-premises infrastructure and workloads off-set against the reduced cost of using Azure.](../images/2001.png)
+    ![Capture d’écran du volet de rapport de l’outil de calcul du coût total de possession (TCO) dans Azure. Les champs de saisie mis en évidence et complétés indiquent comment définir le délai de l’outil de calcul du coût total de possession (TCO) sur trois ans et la région sur Europe du nord. Graphique présentant le coût de l’infrastructure locale et des charges de travail compensés par rapport au coût réduit de l’utilisation d’Azure.](../images/2001.png)
 
-Congratulations! You have used the TCO Calculator to generate a cost comparison report for an on-premises environment.
+Félicitations ! Vous avez utilisé l’outil de calcul du coût total de possession (TCO) pour générer un rapport de comparaison des coûts pour un environnement local.

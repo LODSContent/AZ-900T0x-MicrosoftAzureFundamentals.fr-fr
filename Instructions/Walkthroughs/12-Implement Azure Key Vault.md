@@ -13,12 +13,12 @@ Dans cette procédure pas à pas, nous allons créer un coffre de clés Azure (K
 
 2. Dans le panneau **Tous les services**, recherchez et sélectionnez **Key vaults**, puis sélectionnez **+Ajouter +Nouveau +Créer **.
 
-3. Configure the key vault (replace <bpt id="p1">**</bpt>xxxx<ept id="p1">**</ept> in the name of the key vault with letters and digits such that the name is globally unique). Leave the defaults for everything else.
+3. Configurer le coffre de clés (remplacer **xxxx** dans le nom du coffre de clés par des lettres et des chiffres pour que le nom soit unique au monde). Laissez les valeurs par défaut pour tous les autres éléments.
 
     | Paramètre | Valeur | 
     | --- | --- |
     | Abonnement | **Utilisez la valeur par défaut fournie** |
-    | Resource group | **Créer un groupe de ressources** |
+    | Groupe de ressources | **Créer un groupe de ressources** |
     | Nom du coffre de clés | **keyvaulttestxxx** |
     | Location | **USA Est** |
     | Niveau tarifaire | **Standard** |
@@ -26,13 +26,13 @@ Dans cette procédure pas à pas, nous allons créer un coffre de clés Azure (K
     **Remarque** remplacez **xxxx** afin de créer un nom unique.
 4. Cliquez sur **Examiner et créer**, puis cliquez sur **Créer**. 
 
-5. Once the new key vault is provisioned, click <bpt id="p1">**</bpt>Go to resource<ept id="p1">**</ept>. Or you can locate your new key vault by searching for it. 
+5. Une fois le nouveau coffre de clés configuré, cliquez sur **Accéder à la ressource**. Vous pouvez également localiser votre nouveau coffre de clés en le recherchant. 
 
-6. Click on the key vault <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> tab and take note of the <bpt id="p2">**</bpt>Vault URI<ept id="p2">**</ept>. Applications that use your vault through the REST APIs will need this URI.
+6. Cliquez sur le coffre de clés dans le panneau **Présentation** et prenez note de l’**URI Vault**. Les applications qui utilisent votre coffre via les API REST doivent utiliser cet URI.
 
-7. Take a moment to browse through some of the other key vault options. Under <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> review <bpt id="p2">**</bpt>Keys<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Secrets<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Certificates<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Access Policies<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Firewalls and virtual networks<ept id="p6">**</ept>.
+7. Prenez un moment pour parcourir certaines des autres options du coffre de clés. Sous **Paramètres**, vérifiez **Clés**, **Secrets**, **Certificats**, **Stratégies d’accès**, **Pare-feu et réseaux virtuels**.
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Your Azure account is the only one authorized to perform operations on this new vault. You can modify this if you wish in the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> and then the <bpt id="p2">**</bpt>Access policies<ept id="p2">**</ept> section.
+    **Remarque** : Votre compte Azure est le seul autorisé à effectuer des opérations sur ce nouveau coffre. Vous pouvez le modifier si vous le souhaitez dans les **Paramètres** puis dans la section **Stratégies d’accès**.
 
 # <a name="task-2-add-a-secret-to-the-key-vault"></a>Tâche 2 : Ajouter un secret au coffre de clés
         
@@ -40,7 +40,7 @@ Dans cette tâche, nous ajouterons un mot de passe au coffre à clés.
 
 1. Sous **Paramètres**, cliquez sur **Secrets**, puis sur **+ Générer/Importer**.
 
-2. Configure the secret. Leave the other values at their defaults. Notice you can set an activation and expiration date. Notice you can also disable the secret.
+2. Configurez le secret. Conservez les valeurs par défaut pour tous les autres éléments. Notez que vous pouvez définir une date d’activation et une date d’expiration. Notez que vous pouvez également désactiver le secret.
 
     | Paramètre | Valeur | 
     | --- | --- |
@@ -52,11 +52,11 @@ Dans cette tâche, nous ajouterons un mot de passe au coffre à clés.
 
 4. Une fois le secret créé, cliquez sur **ExamplePassword** et notez qu’il a le statut **Activé**
 
-5. Select the secret you just created, note the the <bpt id="p1">**</bpt>Secret Identifier<ept id="p1">**</ept>. This is the url value that you can now use with applications. It provides a centrally managed and securely stored password. 
+5. Sélectionnez le secret que vous venez de créer et notez le **Identificateur de secret**. Il s’agit de la valeur de l’URL que vous pouvez désormais utiliser avec les applications. Il fournit un mot de passe géré de manière centralisée et stocké en toute sécurité. 
 
 6. Cliquez sur le bouton **Afficher la valeur du secret** pour afficher le mot de passe que vous avez spécifié précédemment.
 
 
-Configurer le coffre de clés (remplacer **xxxx** dans le nom du coffre de clés par des lettres et des chiffres pour que le nom soit unique au monde).
+Félicitations ! Vous avez créé un coffre de clés Azure, puis créé un mot de passe secret dans ce coffre de clés. Vous disposez donc d’un mot de passe sécurisé et géré de manière centralisée, qui peut être utilisé dans les applications.
 
-Laissez les valeurs par défaut pour tous les autres éléments.
+**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.

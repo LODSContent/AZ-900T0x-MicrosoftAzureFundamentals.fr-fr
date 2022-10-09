@@ -11,15 +11,15 @@ Dans cette procédure pas à pas, nous utiliserons la calculatrice de prix Azure
 
 Dans cette tâche, nous allons estimer le coût d’un échantillon d’infrastructure à l’aide de la calculatrice de prix Azure. 
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To create an Azure Pricing Calculator estimate, this walkthrough provides example configurations for the VM and related resources. Use this example configurations or provide the Azure Pricing Calculator with details of your <bpt id="p1">*</bpt>actual<ept id="p1">*</ept> resource requirements instead.
+**Remarque** : Pour créer une estimation de la calculatrice de prix Azure, cette procédure pas à pas donne des exemples de configurations pour la machine virtuelle et les ressources associées. Utilisez cet exemple de configurations ou fournissez au calculateur de prix appliqués Azure des détails sur vos besoins *réels* en ressources.
 
 1. Dans un navigateur, accédez à la page Web [Calculateur de prix appliqués Azure](https://azure.microsoft.com/en-us/pricing/calculator/).
 
 2. Pour ajouter des détails sur votre configuration de machine virtuelle, cliquez sur **Machines virtuelles**, sous l’onglet **Produits**. Faites défiler vers le bas pour afficher les détails de la machine virtuelle. 
 
-3. Replace <bpt id="p1">**</bpt>Your Estimate<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Virtual Machines<ept id="p2">**</ept> text with more descriptive names for your Azure Pricing Calculator estimate and your VM configuration. This walkthrough example uses <bpt id="p1">**</bpt>My Pricing Calculator Estimate<ept id="p1">**</ept> for the estimate, and <bpt id="p2">**</bpt>Windows VM<ept id="p2">**</ept> for the VM configuration.
+3. Remplacez le texte **Votre estimation** et **Machines virtuelles** avec des noms plus descriptifs pour votre estimation du calculateur de prix appliqués Azure et votre configuration de machine virtuelle. Cet exemple pas à pas utilise **Mon estimation de la calculatrice de prix** pour l’estimation, et **Machine virtuelle Windows** pour la configuration de la machine virtuelle.
 
-   ![Screenshot of the vm configuration area within the Azure pricing calculator estimate webpage. The highlighted estimate name and vm configuration name indicate how to add an estimate name and a vm configuration name to an Azure pricing calculator estimate.](../images/1901.png)
+   ![Capture d’écran de la zone de configuration de la machine virtuelle dans la page Web d’estimation de la calculatrice de prix Azure. Le nom d’estimation et le nom de configuration de la machine virtuelle en surbrillance indiquent comment ajouter un nom d’estimation et un nom de configuration de la machine virtuelle à une estimation du calculateur de prix appliqués Azure.](../images/1901.png)
 
 4. Modifiez la configuration de la machine virtuelle par défaut.
 
@@ -31,19 +31,19 @@ Dans cette tâche, nous allons estimer le coût d’un échantillon d’infrastr
     | Niveau | **Standard** |  
     | Instance | **R2 : 2 cœurs, 3,5 Go de RAM, 135 Go de stockage temporaire** |
 
-   ![Screenshot of the vm configuration area within the Azure pricing calculator estimate webpage. The highlighted examples of user inputted vm configuration property values indicate how to specify a vm configuration within an Azure pricing calculator estimate.](../images/1902.png)
+   ![Capture d’écran de la zone de configuration de la machine virtuelle dans la page Web d’estimation de la calculatrice de prix Azure. Les exemples en surbrillance de valeurs de propriété de configuration de la machine virtuelle saisies par l’utilisateur indiquent comment spécifier une configuration de la machine virtuelle dans une estimation de la calculatrice de prix Azure.](../images/1902.png)
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The VM instance specifications and pricing may differ from those in this example. Follow this walkthrough by choosing an instance that matches the example as closely as possible. To view details about the different VM product options, choose <bpt id="p1">**</bpt>Product details<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>More info<ept id="p2">**</ept> menu on the right.
+    **Remarque** : Les spécifications et les prix appliqués des instances de machine virtuelle peuvent différer de ceux de cet exemple. Suivez cette procédure pas à pas en choisissant une instance qui correspond le plus possible à l'exemple. Pour afficher les détails des différentes options de machine virtuelle, choisissez **Détails du produit** dans le menu **Plus d’informations** affiché dans le volet de droite.
 
 5. Définissez la valeur de l’option **Facturation** sur **Paiement à l’utilisation**.
 
-   ![Screenshot of the vm billing options area within the Azure pricing calculator estimate webpage. The highlighted pay as you go billing option indicates how to specify a billing option for a vm within an Azure pricing calculator estimate.](../images/1903.png)
+   ![Capture d’écran de la zone des options de facturation de la machine virtuelle dans la page web d’estimation de la calculatrice de prix Azure. L’option de facturation au fur et à mesure en surbrillance indique comment spécifier une option de facturation pour une machine virtuelle dans une estimation de la calculatrice de prix Azure.](../images/1903.png)
 
-6. **Remarque** : Pour créer une estimation de la calculatrice de prix Azure, cette procédure pas à pas donne des exemples de configurations pour la machine virtuelle et les ressources associées.
+6. Dans Azure, un mois est défini comme 730 heures. Si votre machine virtuelle doit être disponible 100 %du temps chaque mois, vous devez définir la valeur des heures par mois sur `730`. Cet exemple pas à pas nécessite qu’une machine virtuelle soit disponible 50 % du temps chaque mois.
 
     Laissez le nombre de machines virtuelles défini sur `1` et modifiez la valeur des heures par mois sur `365`.
 
-   ![Utilisez cet exemple de configurations ou fournissez au calculateur de prix appliqués Azure des détails sur vos besoins *réels* en ressources.](../images/1904.png)
+   ![Capture d’écran de la zone des options de facturation de la machine virtuelle dans la page web d’estimation de la calculatrice de prix Azure. Le nombre d’instances de machines virtuelles et d’heures par mois en surbrillance indique comment spécifier le nombre d’instances et d’heures par mois pour une machine virtuelle dans une estimation de la calculatrice de prix Azure.](../images/1904.png)
 
 7. Dans le volet **Disques de système d'exploitation gérés**, modifiez la configuration de stockage de la machine virtuelle par défaut.
 
@@ -51,25 +51,25 @@ Dans cette tâche, nous allons estimer le coût d’un échantillon d’infrastr
     | ---- | --------- | --------------- | -------- | -------------------- |
     | HDD Standard | S30 : 1 024 Gio | 1 | Désactivé | 10 000 |
 
-   ![Screenshot of the managed OS Disks options area within the Azure pricing calculator estimate webpage. The highlighted tier type, disk size, number of disks, and number of storage transactions, options indicate how to specify a storage configuration for a vm within an Azure pricing calculator estimate.](../images/1905.png)
+   ![Capture d’écran de la zone d’options des disques du système d’exploitation gérés sur la page web d’estimation de la calculatrice de prix Azure. Les options mentionnant le type de niveau, la taille du disque, le nombre de disques et le nombre de transactions de stockage qui sont mises en surbrillance indiquent comment spécifier une configuration de stockage pour une machine virtuelle dans une estimation de la calculatrice de prix Azure.](../images/1905.png)
 
-8. To add networking bandwidth to your estimate, go to the top of the Azure Pricing Calculator webpage. Click <bpt id="p1">**</bpt>Networking<ept id="p1">**</ept> in the product menu on the left, then click the <bpt id="p2">**</bpt>Bandwidth<ept id="p2">**</ept> tile. In the <bpt id="p1">**</bpt>Bandwidth added<ept id="p1">**</ept> message dialog, click <bpt id="p2">**</bpt>View<ept id="p2">**</ept>.
+8. Pour ajouter de la bande passante de mise en réseau à votre estimation, accédez au haut de la page Web Calculateur de prix appliqués Azure. Cliquez sur **Mise en réseau** dans le menu produit à gauche, puis cliquez sur la mosaïque **Bande passante**. Dans la boîte de dialogue **Bande passante ajoutée**, cliquez sur **Vue**.
 
-   ![Screenshot of the networking products area within the Azure pricing calculator webpage. The highlighted networking, add bandwidth, and view bandwidth, tiles indicate how to add and view details of a networking bandwidth configuration in an Azure pricing calculator estimate.](../images/1906.png)
+   ![Capture d’écran de la zone des produits de mise en réseau sur la page web de la calculatrice de prix Azure. Les mosaïques de mise en réseau, d’ajout de bande passante et d’affichage de bande passante en surbrillance indiquent comment ajouter et afficher les détails d’une configuration de bande passante de mise en réseau dans une estimation de la calculatrice de prix Azure.](../images/1906.png)
 
-9. Remplacez le texte **Votre estimation** et **Machines virtuelles** avec des noms plus descriptifs pour votre estimation du calculateur de prix appliqués Azure et votre configuration de machine virtuelle.
+9. Ajoutez un nom pour votre configuration de bande passante de la machine virtuelle. Cet exemple pas à pas utilise le nom **Bande passante : Machine virtuelle Windows**. Modifiez la configuration de bande passante par défaut en ajoutant les détails suivants.
 
     | Région | Montant du transfert de données sortantes de la zone 1 |
     | ------ | -------------------------------------- |
     | Europe Nord | 50 Go |
 
-   ![Cet exemple pas à pas utilise **Mon estimation de la calculatrice de prix** pour l’estimation, et **Machine virtuelle Windows** pour la configuration de la machine virtuelle.](../images/1907.png)
+   ![Capture d’écran de la zone de configuration de la bande passante de mise en réseau dans la page web d’estimation de la calculatrice de prix Azure. Les exemples mis en évidence de valeurs de propriété de bande passante saisies par l’utilisateur indiquent comment spécifier une configuration de bande passante pour une machine virtuelle dans une estimation de la calculatrice de prix Azure.](../images/1907.png)
 
-10. To add an Application Gateway, return to the top of the Azure Pricing Calculator webpage. In the <bpt id="p1">**</bpt>Networking<ept id="p1">**</ept> product menu, click the <bpt id="p2">**</bpt>Application Gateway<ept id="p2">**</ept> tile. In the <bpt id="p1">**</bpt>Application Gateway<ept id="p1">**</ept> message dialog, click <bpt id="p2">**</bpt>View<ept id="p2">**</ept>.
+10. Pour ajouter une Application Gateway, revenez en haut de la page Web de la calculatrice de prix appliqués Azure. Dans le menu de produit **Mise en réseau**, cliquez sur la mosaïque **Application Gateway**. Dans la boîte de dialogue **Application Gateway**, cliquez sur **Vue**.
 
-    ![Capture d’écran de la zone de configuration de la machine virtuelle dans la page Web d’estimation de la calculatrice de prix Azure.](../images/1908.png)
+    ![Capture d’écran de la zone des produits de mise en réseau sur la page web de la calculatrice de prix Azure. Les mosaïques mise en réseau, ajouter une Application Gateway et afficher une Application Gateway en surbrillance indiquent comment ajouter et afficher les détails d’une configuration d’Application Gateway dans une estimation de la calculatrice de prix appliqués Azure.](../images/1908.png)
 
-11. Le nom d’estimation et le nom de configuration de la machine virtuelle en surbrillance indiquent comment ajouter un nom d’estimation et un nom de configuration de la machine virtuelle à une estimation du calculateur de prix appliqués Azure.
+11. Ajoutez un nom pour votre configuration Application Gateway. Cette procédure pas à pas utilise le nom **App Gateway : Machine virtuelle Windows**. Modifiez la configuration Application Gateway par défaut en ajoutant les détails suivants.
 
     | Paramètres | Valeur |
     | -- | -- |
@@ -90,12 +90,12 @@ Dans cette tâche, nous allons examiner les résultats de la calculatrice de pri
 
 1. Faites défiler vers le bas de la page Web de la calculatrice de prix appliqués Azure pour afficher le total du **Coût mensuel estimé**.
 
-    <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Explore the various options available within the Azure Pricing Calculator. For example, this walkthrough requires you to update the currency to Euro.
+    **Remarque** : Explorez les différentes options disponibles dans la calculatrice de prix Azure. Par exemple, cette procédure pas à pas vous oblige à mettre à jour la devise en Euro.
 
 2. Modifiez la devise en Euro, puis sélectionnez **Exporter** pour télécharger une copie de l’estimation pour une consultation hors ligne au format Microsoft Excel (`.xlsx`).
 
-    ![Screenshot of the total estimated monthly costs within the Azure pricing calculator estimate webpage. The highlighted euro currency option indicates how to modify the currency used in an Azure pricing calculator estimate. The highlighted export option illustrates how to download a copy of an estimate for offline viewing.](../images/1910.png)
+    ![Capture d'écran du total des coûts mensuels estimés sur la page web d’estimation de la calculatrice de prix Azure. L’option de devise Euro mise en évidence indique comment modifier la devise utilisée dans une estimation de la calculatrice de prix Azure. L’option d’exportation en surbrillance illustre comment télécharger une copie d’une estimation pour une consultation hors ligne.](../images/1910.png)
 
     ![Capture d’écran d’un exemple d’estimation de la calculatrice de prix Azure dans Microsoft Excel.](../images/1911.png)
 
-Congratulations! You downloaded an estimate from the Azure Pricing Calculator.
+Félicitations ! Vous avez téléchargé une estimation à partir de la calculatrice de prix Azure.

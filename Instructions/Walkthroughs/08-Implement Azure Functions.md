@@ -20,7 +20,7 @@ Dans cette tâche, nous allons créer une application de fonction.
     | Paramètres | Valeur |
     | -- | --|
     | Abonnement | **Utilisez la valeur par défaut fournie** |
-    | Resource group | **Créer un groupe de ressources** |
+    | Groupe de ressources | **Créer un groupe de ressources** |
     | Nom de l’application de fonction | **function-xxxx** |
     | Publier | **Code** |
     | Pile d’exécution | **.NET** |
@@ -33,7 +33,7 @@ Dans cette tâche, nous allons créer une application de fonction.
 
 5. Attendez la notification indiquant que la ressource a bien été créée.
 
-6. When the deployment has completed, click Go to resource from the deployment blade. Alternatively, navigate back to the <bpt id="p1">**</bpt>Function App<ept id="p1">**</ept> blade, click <bpt id="p2">**</bpt>Refresh<ept id="p2">**</ept> and verify that the newly created function app has the <bpt id="p3">**</bpt>Running<ept id="p3">**</ept> status. 
+6. Une fois le déploiement terminé, cliquez sur Accéder à la ressource dans le panneau de déploiement. Une autre alternative consiste à revenir au niveau du panneau **Function App**, à cliquer sur **Actualiser** et à vérifier que la nouvelle application de fonction est effectivement dotée du statut **Running** (En cours d’exécution). 
 
     ![Capture d’écran de la page Function App avec la nouvelle application de fonction.](../images/0701.png)
 
@@ -45,25 +45,25 @@ Dans cette tâche, nous allons utiliser la fonction Webhook + API pour afficher 
 
 2. Dans le panneau Function App, dans la section **Fonctions**, cliquez sur **Fonctions**, puis sur **+ Ajouter, + Créer, + Nouveau**.
 
-    ![Screenshot of the choose a development environment step in the azure functions for dot net getting started pane inside Azure portal. The display elements for creating a new in-portal function are highlighted. The highlighted elements are expand the function app, add new function, in-portal, and the continue button.](../images/0702.png)
+    ![Capture d’écran de l’étape de choix d’un environnement de développement dans les fonctions Azure pour le volet Mise en route de dot net dans le portail Azure. Les éléments d’affichage pour créer une nouvelle fonction dans le portail sont mis en surbrillance. Les éléments en surbrillance sont le développement de l’application de fonction, l’ajout d’une nouvelle fonction dans le portail et le bouton Continuer.](../images/0702.png)
 
-3. An <bpt id="p1">**</bpt>Add function<ept id="p1">**</ept> pop-up window will appear on the right. In the <bpt id="p1">**</bpt>Select a template<ept id="p1">**</ept> section click <bpt id="p2">**</bpt>HTTP trigger<ept id="p2">**</ept>. Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> 
+3. La fenêtre contextuelle **Ajouter une fonction** s'affiche dans le volet droit. Dans la section **Sélectionner un modèle**, cliquez sur **Déclencheur HTTP**. Cliquez sur **Ajouter** 
 
-    ![Screenshot of the create a function step in the azure functions for dot net getting started pane inside Azure portal. The HTTP trigger card is highlighted to illustrate the display elements used to add a new webhook to an Azure function.](../images/0702a.png)
+    ![Capture d’écran de l’étape de création d’une fonction dans les fonctions Azure pour le volet Mise en route de dot net dans le portail Azure. La fiche de déclenchement HTTP est en surbrillance pour illustrer les éléments d’affichage utilisés pour ajouter un nouveau webhook à une fonction Azure.](../images/0702a.png)
 
 4. Dans le panneau **HttpTrigger1**, dans la section **Développeur**, cliquez sur **Code + Test**. 
 
-5. On the <bpt id="p1">**</bpt>Code + Test<ept id="p1">**</ept> blade, review the auto-generated code and note that the code is designed to run an HTTP request and log information. Also, notice the function returns a Hello message with a name. 
+5. Dans le panneau **Code + Test**, examinez le code généré automatiquement et notez que le code est conçu pour exécuter une requête HTTP et des informations de traçage. Notez également que la fonction renvoie un message de type Hello avec un nom. 
 
-    ![Screenshot of the function code. The Hello message is hightlighted.](../images/0704.png)
+    ![Capture d’écran du code de la fonction. Le message de type Hello est en surbrillance.](../images/0704.png)
 
 6. Cliquez sur **Obtenir l’URL de la fonction** dans la partie supérieure de l’éditeur de fonctions. 
 
 7. Assurez-vous que la valeur de la liste déroulante **Clé** est définie sur **Par défaut**, puis cliquez sur **Copier** pour copier l’URL de la fonction. 
 
-    ![Screenshot of the get function URL pane inside the function editor in Azure portal. The display elements get function URL button, set key dropdown, and copy URL button are highlighted to indicate how to obtain and copy the function URL from the function editor.](../images/0705.png)
+    ![Capture d’écran du panneau Obtenir l’URL de la fonction dans l’éditeur de fonction du portail Azure. Les éléments d’affichage du bouton Obtenir l’URL de la fonction, de la liste déroulante Définir la clé et du bouton Copier l’URL sont en surbrillance pour indiquer comment obtenir et copier l’URL de la fonction depuis l’éditeur de fonction.](../images/0705.png)
 
-8. Open a new browser tab and paste the copied function URL into your web browser's address bar. When the page is requested the function will run. Notice the returned message stating that the function requires a name in the request body.
+8. Ouvrez un nouvel onglet de navigateur et collez l’URL de la fonction copiée dans la barre d’adresse de votre navigateur web. Lorsque la page sera demandée, la fonction s’exécutera. Notez le message renvoyé indiquant que la fonction nécessite un nom dans le corps de la demande.
 
     ![Capture d’écran du message Veuillez indiquer un nom.](../images/0706.png)
 
@@ -71,12 +71,12 @@ Dans cette tâche, nous allons utiliser la fonction Webhook + API pour afficher 
 
     **Remarque** : Par exemple, si votre nom est Cindy, l’URL final ressemblera à ceci : `https://azfuncxxx.azurewebsites.net/api/HttpTrigger1?code=X9xx9999xXXXXX9x9xxxXX==&name=cindy`
 
-    ![Screenshot of a highlighted function URL and an appended example user name in the address bar of a web browser. The hello message and user name are also highlighted to illustrate the output of the function in the main browser window.](../images/0707.png)
+    ![Capture d’écran d’une URL de fonction en surbrillance et d’un exemple de nom d’utilisateur ajouté dans la barre d’adresse d’un navigateur web. Le message de type Hello et le nom d’utilisateur sont également mis en surbrillance pour illustrer la sortie de la fonction dans la fenêtre principale du navigateur.](../images/0707.png)
 
-10. When you hit enter, your function runs and every invocation is traced. To view the traces, return to the Portal <bpt id="p1">**</bpt>HttpTrigger1 <ph id="ph1">\|</ph> Code + Test<ept id="p1">**</ept> blade and click <bpt id="p2">**</bpt>Monitor<ept id="p2">**</ept>. You can <bpt id="p1">**</bpt>configure<ept id="p1">**</ept> Application Insights by selecting the timestamp and click <bpt id="p2">**</bpt>Run query in Application Insights<ept id="p2">**</ept>.
+10. Lorsque vous appuyez sur Entrée, votre fonction est exécutée et toutes les invocations sont tracées. Pour afficher les traces, retournez dans le panneau **HttpTrigger1 \| Code + test** du portail, puis cliquez sur **Analyser**. Vous pouvez **configurer** Application Insights en sélectionnant le timestamp, puis cliquer sur **Exécuter une requête dans Application Insights**.
 
     ![Capture d’écran d’un journal d’informations de traçage résultant de l’exécution de la fonction dans l’éditeur de fonction du portail Azure.](../images/0709.png) 
 
-Congratulations! You have created a Function App to display a Hello message when there is an HTTP request.  
+Félicitations ! Vous avez créé une application de fonction pour afficher un message Hello en cas de requête HTTP.  
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: To avoid additional costs, you can optionally remove this resource group. Search for resource groups, click your resource group, and then click <bpt id="p1">**</bpt>Delete resource group<ept id="p1">**</ept>. Verify the name of the resource group and then click <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>. Monitor the <bpt id="p1">**</bpt>Notifications<ept id="p1">**</ept> to see how the delete is proceeding.
+**Remarque** : Pour éviter des coûts supplémentaires, vous pouvez supprimer ce groupe de ressources. Recherchez des groupes de ressources, cliquez sur votre groupe de ressources, puis sur **Supprimer le groupe de ressources**. Vérifiez le nom du groupe de ressources, puis cliquez sur **Supprimer**. Surveillez les **notifications** pour voir comment se déroule la suppression.
