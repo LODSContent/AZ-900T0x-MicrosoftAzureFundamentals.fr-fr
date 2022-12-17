@@ -18,7 +18,7 @@ Dans cette procédure pas à pas, nous allons créer un coffre de clés Azure (K
     | Paramètre | Valeur | 
     | --- | --- |
     | Abonnement | **Utilisez la valeur par défaut fournie** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom du coffre de clés | **keyvaulttestxxx** |
     | Location | **USA Est** |
     | Niveau tarifaire | **Standard** |

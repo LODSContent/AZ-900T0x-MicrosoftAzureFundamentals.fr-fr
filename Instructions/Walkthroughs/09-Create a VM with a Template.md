@@ -30,7 +30,7 @@ Dans cette tâche, nous allons parcourir la galerie de démarrage rapide Azure e
     | Paramètre| Valeur|
     |----|----|
     | Abonnement | **Utilisez la valeur par défaut fournie**|
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Région | conservez l’URL par défaut . |
     | Nom d’utilisateur administrateur | **azureuser** |
     | Mot de passe de l'administrateur | **Pa$$w0rd1234** |

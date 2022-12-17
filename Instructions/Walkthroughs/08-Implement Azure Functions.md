@@ -20,7 +20,7 @@ Dans cette tâche, nous allons créer une application de fonction.
     | Paramètres | Valeur |
     | -- | --|
     | Abonnement | **Utilisez la valeur par défaut fournie** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom de l’application de fonction | **function-xxxx** |
     | Publier | **Code** |
     | Pile d’exécution | **.NET** |

@@ -6,7 +6,7 @@ layout: home
 
 # <a name="content-directory"></a>Répertoire de contenu
 
-Hyperlinks to each of the walkthroughs. Instructors may choose to use the walkthrough as a demonstration or a student lab. 
+Liens hypertextes vers chacune des procédures pas à pas. Les instructeurs peuvent choisir d’utiliser la procédure pas à pas comme démonstration ou en tant que labo pour les participants. 
 
 ## <a name="walkthroughs"></a>Procédures pas à pas
 

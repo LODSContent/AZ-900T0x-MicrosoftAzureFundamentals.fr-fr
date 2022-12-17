@@ -19,7 +19,7 @@ Au cours de cette procédure pas à pas, nous allons créer une machine virtuell
     | Paramètres | Valeurs |
     |  -- | -- |
     | Abonnement | **Utilisez la valeur par défaut fournie** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom de la machine virtuelle | **myVM** |
     | Région | **(États-Unis) USA Est**|
     | Options de disponibilité | Aucune option de redondance de l'infrastructure requise|

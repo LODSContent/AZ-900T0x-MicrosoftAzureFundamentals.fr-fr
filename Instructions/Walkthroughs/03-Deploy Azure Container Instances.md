@@ -21,7 +21,7 @@ Dans cette tâche, nous allons créer une nouvelle instance de conteneur pour l�
     | Paramètre| Valeur|
     |----|----|
     | Abonnement | ***Utilisez la valeur par défaut fournie*** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom du conteneur| **mycontainer**|
     | Région | **(États-Unis) USA Est** |
     | Source d’image| **Docker Hub ou autre registre**|

@@ -20,7 +20,7 @@ Au cours de cette tâche, nous allons créer une machine virtuelle de centre de 
     | Paramètres | Valeurs |
     |  -- | -- |
     | Abonnement | **Utiliser la valeur par défaut fournie** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom de la machine virtuelle | **SimpleWinVM** |
     | Région | **(États-Unis) USA Est**|
     | Image | **Windows Server 2019 Datacenter Gen 2**|

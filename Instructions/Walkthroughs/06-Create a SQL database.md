@@ -21,7 +21,7 @@ Dans cette tâche, nous créons une base de données SQL à partir de l’exempl
     | Paramètre | Valeur | 
     | --- | --- |
     | Abonnement | **Utilisez la valeur par défaut fournie** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom de la base de données| **db1** | 
     | Serveur | Sélectionnez **Créer** (une nouvelle barre latérale s’ouvre sur la droite)|
     | Nom du serveur | **sqlserverxxxx** (doit être unique) | 

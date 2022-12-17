@@ -43,7 +43,7 @@ Au cours de cette tâche, nous allons créer des comptes de stockage pour tester
     | Paramètre | Valeur | 
     | --- | --- |
     | Abonnement | **Utiliser la valeur par défaut fournie** |
-    | Groupe de ressources | **Créer un groupe de ressources** |
+    | Resource group | **Créer un groupe de ressources** |
     | Nom du compte de stockage | **compte_stockagexxxx** |
     | Emplacement | **(États-Unis) USA Est** |
 
