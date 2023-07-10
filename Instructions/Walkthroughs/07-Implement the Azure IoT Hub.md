@@ -26,7 +26,7 @@ Dans cette tâche, nous allons créer un hub IoT.
 
     **Remarque** - Veillez à modifier la valeur **xxxxx** pour créer un **Nom de Hub IoT** unique.
 
-4. Sous l’onglet **Gestion** recherchez **Prix et niveau d’échelle** dans la liste déroulante et définissez sa valeur sur **S1 : Niveau Standard**.
+4. Dans le champ **Niveau**, utilisez le menu déroulant pour sélectionner **Gratuit**.
 
 5. Cliquez sur le bouton **Vérifier + créer**.
 
